@@ -1,0 +1,22 @@
+@charset "utf-8";
+ul {
+  max-width: 500px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  /* flexとgridの時だけ適用可 */
+  justify-content:space-between;
+  /* flexの時だけ適用可 */
+}
+/* li {
+  padding-left: 20px;
+}
+li:first-child {
+  padding-left: 0;
+} */
+
+@media screen and (max-width: 767px) {
+  ul {
+    flex-direction: column;
+  }
+}
